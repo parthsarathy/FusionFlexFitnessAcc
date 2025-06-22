@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5vw;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  min-width: 0;
+}
+.headerLogo {
+  height: 36px;
+  width: 36px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+.headerBrand {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.headerNav {
+  flex-grow: 1;
+  text-align: center;
+  min-width: 0;
+}
+.headerMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  font-size: 1.1rem;
+}
+.headerMenu li a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+.headerRight {
+  margin-top: 0;
+}
+.headerQuoteBtn {
+  background: #ff6600;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .headerMenu {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1rem;
+  }
+  .headerRight {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

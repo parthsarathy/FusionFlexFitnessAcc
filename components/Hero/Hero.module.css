@@ -1,0 +1,52 @@
+/* Hero styles for modular structure */
+.heroSection {
+  background: #ff6600;
+  color: #fff;
+  padding: 6vw 0;
+}
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.heroLeft {
+  flex: 1;
+  min-width: 260px;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+.heroTitle {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.heroDesc {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 32px;
+}
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.heroRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+  max-width: 100%;
+}
+@media (max-width: 600px) {
+  .heroContent {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .heroLeft {
+    margin-bottom: 0;
+  }
+}
