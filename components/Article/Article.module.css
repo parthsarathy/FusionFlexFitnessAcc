@@ -1,0 +1,40 @@
+.article {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
+  max-width: 900px;
+  width: 100%;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ff6600;
+}
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #19376D;
+}
+.content {
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .article {
+    padding: 1rem 1vw;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .content {
+    font-size: 0.98rem;
+  }
+}

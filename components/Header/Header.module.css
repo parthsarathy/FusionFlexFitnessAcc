@@ -6,10 +6,13 @@
   padding: 12px 5vw;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
   z-index: 100;
   flex-wrap: wrap;
+  border-bottom: 2px solid #726e6e; /* light grey border for separation */
 }
 .headerLeft {
   display: flex;
@@ -46,10 +49,35 @@
   gap: 32px;
   font-size: 1.1rem;
 }
+.headerMenu li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 .headerMenu li a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
+  padding: 8px 0 4px 0;
+  display: inline-block;
+  position: relative;
+  transition: color 0.2s;
+}
+.headerMenu li a.active {
+  color: #ff6600;
+}
+.headerMenu li a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  background: #ff6600;
+  border-radius: 2px;
+  width: 100%;
+  display: block;
+  transition: background 0.2s, width 0.2s;
 }
 .headerRight {
   margin-top: 0;
@@ -81,5 +109,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+  .headerPadding {
+    padding-top: 90px;
   }
 }

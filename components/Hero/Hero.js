@@ -22,8 +22,18 @@ function Hero() {
                         Discover premium accessories designed for performance, comfort, and style. Start your transformation today!
                     </p>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
-                        <Button style={{ border: '2px solid #fff', background: 'transparent', color: '#fff' }}>View Products</Button>
-                        <Button style={{ background: '#fff', color: '#ff6600' }}>Learn More</Button>
+                        <Button
+                            style={{ border: '2px solid #fff', background: 'transparent', color: '#fff' }}
+                            onClick={() => window.location.href = '/products'}
+                        >
+                            View Products
+                        </Button>
+                        <Button
+                            style={{ background: '#fff', color: '#ff6600' }}
+                            onClick={() => window.location.href = '/about'}
+                        >
+                            Learn More
+                        </Button>
                     </div>
                 </div>
                 {/* Right: Carousel */}

@@ -1,0 +1,132 @@
+.contactSection {
+  display: flex;
+  gap: 80px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2.5rem 3vw;
+  margin: 2rem 0;
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.contactLeft {
+  flex: 1;
+  min-width: 260px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+.desc {
+  font-size: 1.15rem;
+  color: #222;
+}
+.addressBlock {
+  background: #f5f6fa;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.08rem;
+  color: #19376D;
+}
+.addressTitle {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.contactForm {
+  flex: 2;
+  min-width: 340px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.contactForm label {
+  font-weight: 500;
+  color: #19376D;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactForm input,
+.contactForm textarea {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 1.08rem;
+  margin-top: 2px;
+  outline: none;
+  transition: border 0.2s;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 1.5px solid #ff6600;
+}
+.sendBtn {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 1.08rem;
+  cursor: pointer;
+  margin-top: 8px;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+.sendBtn:hover {
+  background: #d35400;
+}
+.sendBtn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #ff6600;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.error {
+  color: #d32f2f;
+  font-size: 1rem;
+}
+.success {
+  color: #388e3c;
+  font-size: 1rem;
+}
+@media (max-width: 1100px) {
+  .contactSection {
+    gap: 32px;
+    max-width: 98vw;
+    padding: 1.2rem 2vw;
+  }
+  .contactForm {
+    min-width: 220px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .contactSection {
+    flex-direction: column;
+    gap: 24px;
+    padding: 1.2rem 2vw;
+  }
+  .contactLeft {
+    max-width: 100%;
+  }
+}
