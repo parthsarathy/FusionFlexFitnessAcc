@@ -92,6 +92,30 @@
   font-size: 1rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+}
+.hamburgerBar {
+  width: 26px;
+  height: 3px;
+  background: #222;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.menuQuoteBtn {
+  margin-top: 12px;
+  display: none;
+}
 
 @media (max-width: 600px) {
   .header {
@@ -112,5 +136,32 @@
   }
   .headerPadding {
     padding-top: 90px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+  }
+  .headerMenu {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1rem;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 24px 0 16px 0;
+    z-index: 150;
+    border-radius: 0 0 12px 12px;
+  }
+  .menuQuoteBtn {
+    display: block;
+    text-align: center;
+  }
+  .headerRight {
+    display: none !important;
   }
 }

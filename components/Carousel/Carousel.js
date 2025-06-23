@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 
 const images = [
-    '/FFFLogo.jpg',
     '/FFF Image.jpg',
+    '/FFFLogo.jpg',
 ];
 
 function Carousel() {
